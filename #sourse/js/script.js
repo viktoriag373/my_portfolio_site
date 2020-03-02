@@ -1,28 +1,60 @@
 'use strict'
 
-
-let iconMenu = document.querySelector('.icon-menu');
-
-iconMenu.addEventListener('click', function() {
-	iconMenu.classList.toggle('active');
-	let menuBody = document.querySelector('.menu__body');
-	menuBody.classList.toggle('active');
-	document.body.classList.toggle('lock');
-})
- 
-
-
 $(document).ready(function(){
+	let isMenuOpen = false;
+	$('.icon-menu').click(function(event){
+		if (isMenuOpen === false) {
+			openBurger()
+		} else {
+			closedBurger()		
+		}
+		// toggleClassBurger();
+	})
 
-	function ibg(){
-		$.each($('.ibg'), function(index, val) {
-			if($(this).find('img').length>0){
-				$(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
-			}
-		});
+
+	function openBurger() {
+		isMenuOpen = true;
+		$('.icon-menu,.menu__body').addClass('active');
+		$('body').addClass('lock');
 	}
 
-	ibg();
+	function closedBurger() {
+		isMenuOpen = false;
+		$('.icon-menu,.menu__body').removeClass('active');
+		$('body').removeClass('lock');		
+	}
+
+
+
+
+	// function toggleClassBurger(){
+	// 	$('.icon-menu,.menu__body').toggleClass('active');
+	// 	$('body').toggleClass('lock');
+	// }
+
+
+	let menuHeight = $('.header__row').height();
+
+	$(function(){
+        $("a[href^='#']").click(function(){
+        	// toggleClassBurger();
+        	closedBurger()
+            var _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top-menuHeight+"px"});
+            return false;
+        });
+	});
+
+
+	// function ibg(){
+	// 	$.each($('.ibg'), function(index, val) {
+	// 		if($(this).find('img').length>0){
+	// 			$(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
+	// 		}
+	// 	});
+	// }
+
+	// ibg();
 
 
 	$('.slider').slick({

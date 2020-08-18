@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css?ver=1.0.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css?ver=1.0">
+    <link rel="stylesheet" href="css/swiper.css">
+    <title>Виктория-WEB-программист</title>
+    <!-- Begin Verbox {literal} -->
+    <script type='text/javascript'>
+        (function(d, w, m) {
+            window.supportAPIMethod = m;
+            var s = d.createElement('script');
+            s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
+            s.async = true;
+            var id = 'eb5469d129f2da6f03b16460047b49c0';
+            s.src = 'https://admin.verbox.ru/support/support.js?h='+id;
+            var sc = d.getElementsByTagName('script')[0];
+            w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
+            if (sc) sc.parentNode.insertBefore(s, sc); 
+            else d.documentElement.firstChild.appendChild(s);
+        })(document, window, 'Verbox');
+    </script>
+<!-- {/literal} End Verbox -->
 </head>
-
 <body>
     <div class="wrapper">
         <main class="page">
@@ -26,121 +42,102 @@
                                 <li><a href="#portfolio" class="menu__link">Портфолио</a></li>
                                 <li><a href="#about_me" class="menu__link">Обо мне</a></li>
                                 <li><a href="#skills" class="menu__link">Навыки</a></li>
-                                <!-- <li><a href="#" class="menu__link">Контакты</a></li> -->
+                                <li><a href="#footer" class="menu__link">Контакты</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-                <!-- <div class="container"> -->
-                <div class="header__title">
-                    <h1>
-                        <span>Добро пожаловать</span><br>
-                        Меня зовут Виктория,<br>
-                        я WEB-разработчик
-                    </h1>
+                <!-- <div class="slider-wrap">
+                    <div class="single-slide" id="slide-1"></div>
+                    <div class="single-slide" id="slide-2"></div>
+                    <div class="single-slide" id="slide-3"></div>
+                    <div class="single-slide" id="slide-4"></div>
+                    <div class="single-slide" id="slide-5"></div>
+                </div> -->
+                <div class="wrapper">
+                    <h1>Тут будет главная информация</h1>
                 </div>
-                <!--   </div>   -->
+                
             </header>
-            <!--             <div class="main-screen">
-                <div class="main-screen__bg ibg">
-                    <img src="img/main_bg.jpg" alt="">
-                </div>
-                <div class="main-screen__row">
-                    <div class="main-screen__column">                 
-                    </div>               
-                </div>
-            </div> -->
             <div class="content">
                 <section class="about_me" id="about_me">
                     <div class="container">
                         <div class="about_me__title title_block">
                             <h2>Обо мне</h2>
-                            <div class="title_text">
-                                <p>Proin iaculis purus consequat sem cure.</p>
-                            </div>
                         </div>
-                        <div class="about_me__row ">
-                            <div class="about_me__column">
-                                <span class="about_me__img">
-                                    <!-- <img src="img/about1.png" alt=""> -->
-                                    <img src="img/about1.jpg" alt="">
-                                </span>
+                        <div class="about_me__row-wrap">
+                            <div class="about_me__row ">
+                                <div class="about_me__column">
+                                    <span class="about_me__img">
+                                        <img src="img/about1.jpg" alt="">
+                                    </span>
+                                </div>
+                                <div class="about_me__column about_me__column_b">
+                                    <h3>lorem</h3>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit."</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Sed totam repudiandae fugit quas, ad, mollitia explicabo, 
+                                        esse placeat aliquam inventore, eos a aperiam quis. Porro at, sequi suscipit et hic.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="about_me__column about_me__column_b">
-                                <h3>July 2010</h3>
-                                <h3>Our Humbule Beginnings</h3>
-                                <p>Proin iaculis purus consequat sem cure 
-                                    digni ssim. Donec porttitora entum suscipit 
-                                    aenean rhoncus posuere odio in tincidunt. Proin 
-                                    iaculis purus consequat sem cure digni 
-                                    ssim. Donec porttitora entum suscipit.
-                                </p>
+                            <div class="about_me__row about_me-rev">
+                                <div class="about_me__column">
+                                    <span class="about_me__img">
+                                        <img src="img/about2.jpg" alt="">
+                                    </span>
+                                </div>
+                                <div class="about_me__column about_me__column_b">
+                                    <h3>lorem 2020</h3>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit."</h3>
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Sed totam repudiandae fugit quas, ad, mollitia explicabo, 
+                                        esse placeat aliquam inventore, eos a aperiam quis. Porro at, sequi suscipit et hic.
+                                    </p>
+                                </div>
                             </div>
+                            <div class="about_me__row">
+                                <div class="about_me__column">
+                                    <span class="about_me__img">
+                                        <img src="img/about3.jpg" alt="">
+                                    </span>
+                                </div>
+                                <div class="about_me__column about_me__column_b">
+                                    <h3>lorem 2020</h3>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Sed totam repudiandae fugit quas, ad, mollitia explicabo, 
+                                        esse placeat aliquam inventore, eos a aperiam quis. Porro at, sequi suscipit et hic.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about_me__row about_me-rev">
+                                <div class="about_me__column">
+                                    <span class="about_me__img">
+                                        <img src="img/about4.jpg" alt="">
+                                    </span>
+                                </div>
+                                <div class="about_me__column about_me__column_b">
+                                    <h3>lorem 2020</h3>
+                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Sed totam repudiandae fugit quas, ad, mollitia explicabo, 
+                                        esse placeat aliquam inventore, eos a aperiam quis. Porro at, sequi suscipit et hic.
+                                    </p>
+                                </div>
+                                <!-- .about_me__column -->
+                            </div>
+                            <!-- .about_me__row -->
                         </div>
-                        <div class="about_me__row about_me-rev">
-                            <div class="about_me__column">
-                                <span class="about_me__img">
-                                    <!-- <img src="img/about2.png" alt=""> -->
-                                    <img src="img/img4.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="about_me__column about_me__column_b">
-                                <h3>January 2011</h3>
-                                <h3>Facing Startup Battles</h3>
-                                <p>Proin iaculis purus consequat sem cure 
-                                    digni ssim. Donec porttitora entum suscipit 
-                                    aenean rhoncus posuere odio in tincidunt. Proin 
-                                    iaculis purus consequat sem cure digni 
-                                    ssim. Donec porttitora entum suscipit aenean 
-                                    rhoncus posuere odio in tincidunt.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about_me__row">
-                            <div class="about_me__column">
-                                <span class="about_me__img">
-                                    <!-- <img src="img/about3.png" alt=""> -->
-                                    <img src="img/img4.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="about_me__column about_me__column_b">
-                                <h3>December 2012</h3>
-                                <h3>Enter The Dark Days</h3>
-                                <p>Proin iaculis purus consequat sem cure 
-                                    digni ssim. Donec porttitora entum suscipit 
-                                    aenean rhoncus posuere odio in tincidunt. Proin 
-                                    iaculis purus consequat sem cure digni 
-                                    ssim. Donec porttitora entum suscipit aenean.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="about_me__row about_me-rev">
-                            <div class="about_me__column">
-                                <span class="about_me__img">
-                                    <img src="img/about1.jpg" alt="">
-                                </span>
-                            </div>
-                            <div class="about_me__column about_me__column_b">
-                                <h3>february 2014</h3>
-                                <h3>Our Triumph</h3>
-                                <p>Proin iaculis purus consequat sem cure 
-                                    digni ssim. Donec porttitora entum suscipit 
-                                    aenean rhoncus posuere odio in tincidunt. Proin 
-                                    iaculis purus consequat sem cure digni 
-                                    ssim. Donec porttitora entum suscipit aenean.
-                                </p>
-                            </div>
-                        </div>
+                        <!-- .about_me__row-wrap -->
                     </div>
+                    <!-- .container  -->
                 </section>
                 <section class="skills" id="skills">
                     <div class="container">
                         <div class="skills__row">
                             <div class="title_block">
                                 <h2>Навыки</h2>
-                                <div class="title_text">
-                                    <p>Proin iaculis purus consequat sem cure.</p>
-                                </div>
                             </div>
                             <div class="skills__wrap">
                                 <div class="skills__item">
@@ -148,28 +145,28 @@
                                         <i class="fa fa-html5"></i>
                                     </div>
                                     <h3>Html5</h3>
-                                    <p>Симантическая, валидная разметка</p>
+                                    <p>Семантическая, валидная разметка</p>
                                 </div>
                                 <div class="skills__item">
                                     <div class="skills__icon">
                                         <i class="fa fa-css3"></i>
                                     </div>
                                     <h3>CSS3</h3>
-                                    <p>Чистый кроссбраузерный код</p>
+                                    <p>Чистый, кроссбраузерный код</p>
                                 </div>
                                 <div class="skills__item">
                                     <div class="skills__icon">
                                         <i class="fa fa-cogs"></i>
                                     </div>
                                     <h3>JS</h3>
-                                    <p>Написание собственных скриптов, оптимизация</p>
+                                    <p>Работа со скриптами, оптимизация</p>
                                 </div>
                                 <div class="skills__item">
                                     <div class="skills__icon">
                                         <i class="fa fa-git"></i>
                                     </div>
                                     <h3>GitHub</h3>
-                                    <p>Командная разработка, демонстрация верстки на GitHab Pages</p>
+                                    <p>Работа с системами контроля версий</p>
                                 </div>
                                 <div class="skills__item">
                                     <div class="skills__icon">
@@ -183,64 +180,83 @@
                                         <i class="fa fa-mobile-phone"></i>
                                     </div>
                                     <h3>Адаптивная верстка</h3>
-                                    <p>Адаптация под мобильные устройства, прохождение тестов</p>
+                                    <p>Адаптация под мобильные устройства</p>
                                 </div>
                             </div>
+                            <!-- .skills__wrap -->
                         </div>
+                        <!-- .skills__row -->
                     </div>
+                    <!-- .container -->
                 </section>
                 <section class="portfolio" id="portfolio">
-                    <div class="container">
+                    <div class="container portfolio-container">
                         <div class="portfolio__row">
                             <div class="portfolio__title title_block">
                                 <h2>Портфолио</h2>
                                 <div class="title_text">
-                                    <p>Proin iaculis purus consequat sem cure.</p>
+                                    <p>Здесь представлены некоторые из моих работ</p>
                                 </div>
                             </div>
-                            <div class="portfolio__slider slider">
-                                <div class="slider__item">
-                                    <div class="slider__item_wrap">
-                                        <img src="img/img1.jpg" alt="">
-                                        <div class="slider__hidden">
-                                            <h3>Название работы</h3>
-                                            <a href="">Смотреть</a>
-                                        </div>
+                            <div class="portfolio__slider">
+                                <img src="img/ico-desktop.png" class="portfolio__slider-bg" alt="">
+                                <div class="portfolio__slider-wrap">
+                                    <div class = "swiper-container">
+                                        <div class = "swiper-wrapper">
+                                            <div class = "swiper-slide" style = "background-image: url(img/portfolio1.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>Жилой дом</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                            <div class = "swiper-slide" style = "background-image: url(img/portfolio2.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>WayUp</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                            <div class = "swiper-slide" style = "background-image: url(img/portfolio3.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>Delivery Food</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                            <div class = "swiper-slide" style = "background-image: url(img/portfolio4.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>Моё портфолио</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                            <div class = "swiper-slide" style = "background-image: url(img/forest-1225983_1920.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>Название</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                            <div class = "swiper-slide" style = "background-image: url(img/forest-1225983_1920.jpg);">
+                                                <div class="slider__hidden">
+                                                    <h3>Название</h3>
+                                                    <a href="">Смотреть</a>
+                                                </div>
+                                            </div >
+                                        </div >
+                                        <!-- ..swipper-wrapper -->
+                                        <div class = "swiper-button-prev " > </div >
+                                        <div class = "swiper-button-next " > </div >
                                     </div>
+                                    <!-- .swipper-container -->
+                                    <div class = "swiper-pagination" ></div >
                                 </div>
-                                <div class="slider__item">
-                                    <div class="slider__item_wrap">
-                                        <img src="img/img2.jpg" alt="">
-                                        <div class="slider__hidden">
-                                            <h3>Название работы</h3>
-                                            <a href="">Смотреть</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__item_wrap">
-                                        <img src="img/img3.jpg" alt="">
-                                        <div class="slider__hidden">
-                                            <h3>Название работы</h3>
-                                            <a href="">Смотреть</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider__item">
-                                    <div class="slider__item_wrap">
-                                        <img src="img/img4.jpg" alt="">
-                                        <div class="slider__hidden">
-                                            <h3>Название работы</h3>
-                                            <a href="">Смотреть</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- .portfolio__slider-wrap -->
                             </div>
+                            <!-- .portfolio__slider -->
                         </div>
+                        <!-- .portfolio__row -->
                     </div>
+                    <!-- .container -->
                 </section>
             </div>
-            <footer class="footer">
+            <footer class="footer" id="footer">
                 <div class="container">
                     <div class="footer__row">
                         <div class="footer__contact-me">
@@ -254,20 +270,24 @@
                                     aria-hidden="true"></i></a>
                             <a href="skype:live:viktoriag373" target="_blank"><i class="fa fa-skype"
                                     aria-hidden="true"></i></a>
-                            <a href="mailto:viktoriag373@gmail.com?subject=Тема сообщения" target="_blank"><i
+                            <a href="mailto:viktoriag373@gmail.com?subject=Тема_сообщения" target="_blank"><i
                                     class="fa fa-envelope" aria-hidden="true"></i></a>
                         </div>
                         <div class="footer__copyright">
                             <p>© Copyright 2020</p>
                         </div>
                     </div>
+                    <!-- .footer__row -->
                 </div>
+                <!-- .container -->
             </footer>
         </main>
+        <!-- page -->
     </div>
+    <!-- .wrapper -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js?ver=7"></script>
-</body>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js?ver=1.0"></script>
 
-</html>
+</html> 
+
